@@ -205,7 +205,7 @@ window.openProjectModal = function(index) {
     const actionBtn = document.getElementById('modal-action-btn');
 
     title.textContent = project.title;
-    desc.textContent = project.fullDescription || "Explore this amazing project by Nova Studios.";
+    desc.textContent = project.fullDescription || "Explore this amazing project by BloxIT.";
     gallery.innerHTML = '';
     dotsContainer.innerHTML = '';
     currentSlideIndex = 0;
