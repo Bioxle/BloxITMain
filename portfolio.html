@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nova Studios</title>
+    <meta name="description" content="Explore the full collection of projects by Nova Studios.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="cursor-glow"></div>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">Nova Studios</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="portfolio section" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header text-center">
+                <h1 class="reveal">Our Full Portfolio</h1>
+                <p class="reveal delay-1">Explore every project we've brought to life.</p>
+            </div>
+            
+            <div class="portfolio-grid" id="full-portfolio-container">
+                <!-- Portfolio items injected via main.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3 id="footer-studio-name">Nova Studios</h3>
+                    <p id="footer-description">We build tools and designs that empower creators to reach their full potential.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-socials">
+                    <h4>Connect</h4>
+                    <div class="social-icons" id="socials-container">
+                        <!-- Socials injected via main.js -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span id="copyright-name">Nova Studios</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-left">
+                    <div class="carousel-container">
+                        <div class="modal-gallery" id="modal-gallery">
+                            <!-- Media items injected via JS -->
+                        </div>
+                        <button class="carousel-nav prev" id="prev-slide">&lt;</button>
+                        <button class="carousel-nav next" id="next-slide">&gt;</button>
+                        <div class="carousel-dots" id="carousel-dots"></div>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="modal-info">
+                        <h2 id="modal-title"></h2>
+                        <div class="modal-divider"></div>
+                        <p id="modal-desc"></p>
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-primary" id="modal-action-btn">Order Similar Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullscreen-modal" class="fullscreen-modal">
+        <span class="close-fullscreen">&times;</span>
+        <img id="fullscreen-img" src="" alt="Fullscreen Image">
+    </div>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

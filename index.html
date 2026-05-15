@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Studios | Premium Roblox & YouTube Solutions</title>
+    <meta name="description" content="Professional web development, asset creation, and branding for Roblox developers and YouTubers.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="cursor-glow"></div>
+    
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <a href="#" class="logo" id="studio-name">Nova Studios</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <canvas id="graph-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-title" class="reveal">Elevating the <span class="gradient-text">Creator</span> Experience</h1>
+                <p id="hero-tagline" class="reveal delay-1">Premium websites, assets, and branding for Roblox & YouTube.</p>
+                <div class="hero-btns reveal delay-2">
+                    <a href="#portfolio" class="btn btn-primary">View Work</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="blob-1"></div>
+            <div class="blob-2"></div>
+        </div>
+    </header>
+
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="reveal">Our Services</h2>
+                <p class="reveal delay-1">Expert solutions tailored to your creative needs.</p>
+            </div>
+            <div class="services-grid" id="services-container">
+                <!-- Services injected via main.js -->
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Selected Works</h2>
+                <p class="reveal delay-1">A showcase of our recent projects and collaborations.</p>
+            </div>
+            <div class="portfolio-grid" id="portfolio-container">
+                <!-- Portfolio items injected via main.js -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="portfolio.html" class="btn btn-secondary reveal delay-2">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3 id="footer-studio-name">Nova Studios</h3>
+                    <p id="footer-description">We build tools and designs that empower creators to reach their full potential.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-socials">
+                    <h4>Connect</h4>
+                    <div class="social-icons" id="socials-container">
+                        <!-- Socials injected via main.js -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span id="copyright-name">Nova Studios</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-left">
+                    <div class="carousel-container">
+                        <div class="modal-gallery" id="modal-gallery">
+                            <!-- Media items injected via JS -->
+                        </div>
+                        <button class="carousel-nav prev" id="prev-slide">&lt;</button>
+                        <button class="carousel-nav next" id="next-slide">&gt;</button>
+                        <div class="carousel-dots" id="carousel-dots"></div>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="modal-info">
+                        <h2 id="modal-title"></h2>
+                        <div class="modal-divider"></div>
+                        <p id="modal-desc"></p>
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-primary" id="modal-action-btn">Order Similar Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullscreen-modal" class="fullscreen-modal">
+        <span class="close-fullscreen">&times;</span>
+        <img id="fullscreen-img" src="" alt="Fullscreen Image">
+    </div>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
